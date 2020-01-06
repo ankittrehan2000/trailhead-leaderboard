@@ -79,7 +79,7 @@ module.exports = class TrailblazerModelFactory{
             }
         })
     }
-    set(model){
+    set2(model){
         var self = this;
         return new Promise(function(resolve,reject){
             try{
@@ -119,6 +119,74 @@ module.exports = class TrailblazerModelFactory{
             
         });
     }
+    set(model){
+        var self = this;
+        return new Promise(function(resolve,reject){
+            self.getBySlug(model.slug).then(function(original){
+                if(model.trailblazerId !== original.trailblazerId){
+
+                    try{
+                        var newHistory = {
+                            badgeCount: model.badgeCount,
+                            points: model.points,
+                            trails: model.trails,
+                            rankImage: model.rankImage,
+                            rank:model.rank
+                        };
+                        self.TrablazerModel.findOneAndUpdate(
+                            {
+                                'trailblazerId':original.trailblazerId
+                            },
+                            {
+                                $set: model,
+                                $push: {statsHistory:[newHistory]}
+                            },
+                            {
+                                upsert:true,
+                                new:true,
+                                runValidators:true,
+                                setDefaultsOnInsert:true
+                            },
+                            function(err,results){
+                                if(err) {
+                                    console.log('error')
+                                    console.log(err)
+                                    reject(err);
+                                }
+                            console.log("saved!")
+                            resolve(results);
+                        });
+                    }catch(err){
+                        reject(err);
+                    }
+                }else{
+                    resolve(self.set2(model));
+                }
+                
+            });
+        })
+    }
+    getBySlug(slug){
+        var self = this;
+        return new Promise(function(resolve,reject){
+            try {
+               var q = self.TrablazerModel.findOne({slug:String(slug)});
+               q.exec(
+                    function(err,results){
+                        if(err) {
+                            console.log('error')
+                            console.log(err)
+                            reject(err);
+                        }
+                        resolve(results !== null ? results : self.getNew());
+                    }
+               );
+            } catch (err) {
+                console.log('error');
+                reject(err);
+            }
+        })
+    }
     getById(trailblazerId){
         var self = this;
         return new Promise(function(resolve,reject){
@@ -145,6 +213,7 @@ module.exports = class TrailblazerModelFactory{
         try{
             return this.TrablazerModel.find({})
         } catch(err){
+            console.error(err);
             throw err;
         }
     }
