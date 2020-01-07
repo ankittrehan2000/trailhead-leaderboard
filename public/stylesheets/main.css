@@ -1,11 +1,11 @@
-@import url(https://fonts.google.com/specimen/Alegreya);
+@import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 
 body{
     background: -webkit-linear-gradient(left,#DCEDC8,#42B3D5);
-    font-family: 'Alegreya',sans-serif;
+    font-family: 'Alegreya',serif;
 }
 
 .card{
-    background-color: #FFFDD0;
+    background: -webkit-linear-gradient(left,#CC95C0,#DBD4B4,#7AA1D2);
 }
 
