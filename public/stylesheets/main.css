@@ -1,7 +1,11 @@
+@import url(https://fonts.google.com/specimen/Alegreya);
+
 body{
     background: -webkit-linear-gradient(left,#DCEDC8,#42B3D5);
+    font-family: 'Alegreya',sans-serif;
 }
 
 .card{
-    background-color: #BBBF95;
+    background-color: #FFFDD0;
 }
+
