@@ -8,4 +8,8 @@ body{
 .card{
     background: -webkit-linear-gradient(left,#CC95C0,#DBD4B4,#7AA1D2);
 }
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
 
