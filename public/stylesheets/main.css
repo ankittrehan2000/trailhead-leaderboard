@@ -8,3 +8,6 @@ nav{
 .navbar-brand{
     font-size: x-large;
 }
+.row{
+    background-color: aqua;
+}
