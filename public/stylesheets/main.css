@@ -8,9 +8,12 @@ body{
 .card{
     background: -webkit-linear-gradient(right,#BF935F,#FCF6BA,#B38728,#FBF5B7,#AA771C);
     font-family: 'Alegreya',serif;
+    border-radius: 50%;
+    opacity: 0.5;
 }
 .card:hover{
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    opacity: 1;
 }
 
