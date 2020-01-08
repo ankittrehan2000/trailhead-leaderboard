@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
-    background: #57A773;    
+    background: -webkit-linear-gradient(left,#E5FCC2,#9DE0AD);    
 }
 h1{
     font-family: 'Ultra', serif;
     text-align: center;
 }
 .card{
-    background: #40E0D0;
+    background: #45ADA8;
     font-family: 'Alegreya',serif;
     border-radius: 10%;
 }
 .card:hover{
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background: #00CED1;
+    background: #547980;
 }
