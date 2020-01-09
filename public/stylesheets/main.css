@@ -13,12 +13,12 @@ h4{
 .card{
     font-family: 'Alegreya',serif;
     border-radius: 7%;
-    background: linear-gradient(160deg, #B8B8B8 0%, #A9A9A9 100% );
+    background: linear-gradient(160deg, #B8B8B8 0%, #555F61 100% );
 }
 .card:hover{
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
     transition: 0.5s;
-    background: #A9A9A9;
+    background: #555F61;
 }
 
 
