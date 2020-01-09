@@ -7,15 +7,18 @@ h1{
     font-family: 'Ultra', serif;
     text-align: center;
 }
+h4{
+    color: white;
+}
 .card{
     font-family: 'Alegreya',serif;
     border-radius: 7%;
-    background: linear-gradient(160deg, #80D0C7 0%, #0093E9 100% );
+    background: linear-gradient(160deg, #B8B8B8 0%, #A9A9A9 100% );
 }
 .card:hover{
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
     transition: 0.5s;
-    background: #0093E9;
+    background: #A9A9A9;
 }
 
 
