@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
     background: linear-gradient(90deg, #F4D03F 0%, #16A085 50%, #F4D03F);
-    opacity: 0.5;
+    opacity: 0.8;
 }
 h1{
     font-family: 'Ultra', serif;
