@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
-    background: linear-gradient(90deg, #F4D03F 0%, #16A085 50%, #F4D03F);
-    opacity: 0.8;
+    background: linear-gradient(left, #D7E1EC 0%, #FFFFFF 100%);
 }
 h1{
     font-family: 'Ultra', serif;
@@ -10,14 +9,23 @@ h1{
 }
 h4{
     color: white;
+    text-align: center;
+}
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #666666;
 }
 .card{
     font-family: 'Alegreya',serif;
     border-radius: 7%;
     background: linear-gradient(160deg, #B8B8B8 0%, rgb(125, 211, 228) 100% );
+    opacity: 0.9;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 .card:hover{
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.4);
     transition: 0.5s;
     background: #555F61;
 }
