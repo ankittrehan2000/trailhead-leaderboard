@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
-    background-image: linear-gradient(315deg, #eeeeee 0%, #dddddd 74%);
+    background: linear-gradient(180deg, #eeeeee 0%, #dddddd 74%);
 }
 h1{
     font-family: 'Ultra', serif;
     text-align: center;
 }
 h4{
-    color: white;
+    color: blue;
     text-align: center;
 }
 hr{
