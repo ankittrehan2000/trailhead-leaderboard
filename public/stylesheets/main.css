@@ -20,7 +20,7 @@ hr{
 .card{
     font-family: 'Alegreya',serif;
     border-radius: 7%;
-    background: linear-gradient(160deg, #FFFFFF 0%, #2a9df4 100% );
+    background: linear-gradient(160deg, #FFFFFF 0%, #33b5e5 100% );
     opacity: 0.9;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
