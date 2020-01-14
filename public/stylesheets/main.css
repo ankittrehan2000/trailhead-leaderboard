@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
-    background-color: #fffdd0;
+    background-color: #f3f2d6;
 }
 h1{
     font-family: 'Ultra', serif;
@@ -20,7 +20,7 @@ hr{
 .card{
     font-family: 'Alegreya',serif;
     border-radius: 7%;
-    background: linear-gradient(160deg, #b6e8f0 0%, #33b5e5 100% );
+    background: linear-gradient(160deg, #cfebf0 0%, #33b5e5 100% );
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
 }
 .card:hover{
