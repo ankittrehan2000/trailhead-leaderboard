@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:500i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
 body{
-    background: linear-gradient(180deg, #eeeeee 0%, #dddddd 74%);
+    background-color: #fffdd0;
 }
 h1{
     font-family: 'Ultra', serif;
